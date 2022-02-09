@@ -1,0 +1,27 @@
+/*Jetti Veerraju ADC_RJY Arthemetic operations with pointers*/
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d,*addptr,*subptr,*incptr,*decptr;
+    
+        addptr=&a;
+        subptr=&b;
+        incptr=&c;
+        decptr=&d;
+    addptr=addptr+1;
+    subptr=subptr-1;
+    incptr++;
+    decptr--;
+    
+    printf("\n Address addition value %u:",addptr);
+    
+    printf("\n Address Subtraction value %u:",subptr);
+    
+    printf("\n Address of Increment value  %u:",incptr);
+    
+    printf("\n Address of Decrement value %u:",decptr);
+
+    return 0;
+}
