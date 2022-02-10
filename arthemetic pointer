@@ -1,0 +1,24 @@
+/*Jetti Veerraju ADC_RJY Pointers Arithmetic Operations*/
+ 
+
+#include <stdio.h>
+
+int main()
+{
+   int n=1;
+   int *ptr1,*ptr2,*ptr3,*ptr4;
+   ptr1=&n;
+   ptr2=&n;
+   ptr3=&n;
+   ptr4=&n;
+   printf("variable address :%u %u %u %u",ptr1,ptr2,ptr3,ptr4);
+   ptr1=ptr1+2;
+   printf("\n addition variable address :%u",ptr1);
+   ptr2=ptr2-2;
+   printf("\n subtraction variable address :%u",ptr2);
+   ptr3++;
+   printf("\nincrement variables address:%u",ptr3);
+   ptr4--;
+   printf("\n decrement variable address:%u",ptr4);
+    return 0;
+}
